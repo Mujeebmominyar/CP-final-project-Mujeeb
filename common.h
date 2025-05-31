@@ -1,0 +1,16 @@
+#ifndef COMMON_H
+#define COMMON_H
+
+#define MAX_DEPARTMENTS 9
+#define MAX_UNITS_PER_DEPARTMENT 9
+#define MAX_INCIDENTS 100
+#define MAP_MAX_WIDTH 100
+#define MAP_MAX_HEIGHT 100
+#define MAX_REQUIRED_UNITS_PER_TYPE 5
+
+typedef enum { FIRE, MEDICAL, POLICE } IncidentType;
+typedef enum { LOW, MEDIUM, HIGH } Priority;
+typedef enum { UNIT_WAITING, UNIT_DISPATCHED, UNIT_OPERATING, UNIT_RETURNING } UnitState;
+typedef enum { INCIDENT_WAITING, INCIDENT_OPERATION, INCIDENT_FINISHED } IncidentState;
+
+#endif // COMMON_H
